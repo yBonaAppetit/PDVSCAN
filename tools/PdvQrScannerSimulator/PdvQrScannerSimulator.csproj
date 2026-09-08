@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>PdvQrScannerSimulator</AssemblyName>
+    <Product>PdvQrScannerSimulator</Product>
+    <RootNamespace>PdvQrScannerSimulator</RootNamespace>
+    <Version>1.4.0</Version>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\PdvBarcodeFilter\PdvBarcodeFilter.csproj" />
+  </ItemGroup>
+</Project>

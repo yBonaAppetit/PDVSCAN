@@ -1,0 +1,41 @@
+# Build .NET
+**/bin/
+**/obj/
+TestResults/
+*.user
+*.suo
+*.cache
+
+# Publicações e instaladores
+dist/
+dist-*/
+simulator-dist-*/
+installer/*.exe
+installer/*.tmp
+
+# Configuração local e dados operacionais
+filtersettings.json
+*.log
+*.jsonl
+logs/
+history/
+diagnostics/
+Erros/
+
+# Certificados, chaves e segredos
+*.pfx
+*.p12
+*.pem
+*.key
+*.snk
+.env
+.env.*
+secrets.json
+
+# IDE e sistema operacional
+.vs/
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+*.userprefs

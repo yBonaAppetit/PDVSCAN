@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "name": "Filtro PDV — Código-fonte",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.encoding": "utf8",
+    "files.exclude": {
+      "**/bin": true,
+      "**/obj": true
+    }
+  }
+}
