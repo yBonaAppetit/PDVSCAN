@@ -47,24 +47,6 @@ Com `"UseAuxiliaryFromSecondScan": true`, que é o padrão, o mesmo conteúdo
 bruto produz `PADRÃO, AUXILIAR, AUXILIAR...`. A comparação considera o QR
 completo, incluindo o UID. Um cupom diferente reinicia a sequência.
 
-## Simulador de leitor QR
-
-O executável `PdvQrScannerSimulator.exe` testa o fluxo sem um leitor físico.
-Ele não imita teclas injetadas pelo Windows: envia a leitura por um canal local
-de teste, e o filtro executa a mesma separação e envio usados pelo scanner.
-
-1. Inicie o filtro e confirme o estado **ATIVO**.
-2. No ícone da bandeja, habilite **Permitir simulador (somente teste)**.
-3. Abra o simulador, escolha um exemplo e clique em **Enviar leitura**.
-4. Selecione o campo do PDV durante a contagem regressiva.
-5. Repita o exemplo para conferir o envio do código auxiliar e desative o
-   simulador ao terminar.
-
-Os exemplos usam UIDs sintéticos e os códigos mostrados nas imagens:
-`X96UG / 2W7LX1` e `8H57E / 2W7LZ5`. O canal aceita conexões somente do mesmo
-usuário do Windows e permanece bloqueado por padrão. Para habilitá-lo já na
-inicialização de um equipamento de teste, use `"SimulatorInputEnabled": true`.
-
 ## Diagnóstico e som
 
 Por padrão, entradas inválidas e leituras que não forem reconhecidas não emitem
@@ -101,8 +83,7 @@ dotnet run --project .\tests\PdvBarcodeFilter.Tests\PdvBarcodeFilter.Tests.cspro
 ```
 
 O executável autocontido será criado em
-`dist-1.4.0\PdvBarcodeFilter.exe`. O simulador ficará em
-`simulator-dist-1.4.0\PdvQrScannerSimulator.exe` e o instalador em
+`dist-1.4.0\PdvBarcodeFilter.exe` e o instalador em
 `installer\PdvBarcodeFilter-Setup-1.4.0-x64.exe`.
 
 Autoteste do artefato gerado:
